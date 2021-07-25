@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.img_container {
+  display: flex;
+  margin: auto;
+  height: 70vh;
+  margin-top: 2rem;
+}
+.sub_container {
+  width: 100%;
+  .title {
+    text-align: center;
+    width: 40%;
+    font-family: "Poppins";
+    color: white;
+    padding: 1rem 2rem;
+    margin: auto;
+    background-color: rgb(115, 41, 199);
+    box-shadow: 3px 3px 10px rgba(56, 56, 56, 0.774);
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+  }
+  .coming_soon {
+    text-align: center;
+    font-family: "Dancing Script";
+    margin-top: 0;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 427px) {
+  .sub_container {
+    .title {
+      font-size: larger;
+      width: 90%;
+    }
+    .coming_soon {
+      font-size: 3rem;
+    }
+  }
+  .img_container {
+    width: 100%;
+    height: auto;
+  }
+}
