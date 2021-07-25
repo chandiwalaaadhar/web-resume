@@ -6,7 +6,10 @@ import {
   coming_soon,
 } from "./intro.module.scss";
 import DevelopementImage from "../assets/dev_img.png";
-import WebFont from "webfontloader";
+const WebFont =
+  typeof window !== `undefined`
+    ? require("gatsby-plugin-web-font-loader")
+    : null;
 
 const Intro = () => {
   React.useEffect(() => {
@@ -16,6 +19,7 @@ const Intro = () => {
       },
     });
   }, []);
+
   return (
     <div>
       <div className={sub_container}>
