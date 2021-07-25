@@ -6,20 +6,8 @@ import {
   coming_soon,
 } from "./intro.module.scss";
 import DevelopementImage from "../assets/dev_img.png";
-const WebFont =
-  typeof window !== `undefined`
-    ? require("gatsby-plugin-web-font-loader")
-    : null;
 
 const Intro = () => {
-  React.useEffect(() => {
-    WebFont.load({
-      google: {
-        families: ["Poppins", "Dancing Script"],
-      },
-    });
-  }, []);
-
   return (
     <div>
       <div className={sub_container}>
